@@ -1,0 +1,27 @@
+{
+  "name": "code",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "server": "nodemon app.js",
+    "build": "ncc build app.js -o dist/index/"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.13.4",
+    "koa-router": "^9.1.0",
+    "koa2-cors": "^2.0.6",
+    "axios": "^0.26.1",
+    "koa-logger": "^3.2.1",
+    "koa-bodyparser": "^4.3.0"
+  },
+  "bin": "app.js",
+  "pkg": {
+    "assets": [
+      "dist/**/*"
+    ]
+  }
+}
